@@ -14,7 +14,7 @@ platform:
 install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - git submodule update --init --recursive
-  - npm install
+  - npm install --msvs_version=2013
 
 build: off
 
