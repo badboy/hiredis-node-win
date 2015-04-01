@@ -3,9 +3,9 @@ init:
 
 environment:
   matrix:
+    - nodejs_version: 1
     - nodejs_version: 0.11
     - nodejs_version: 0.12
-    - nodejs_version: 1
 
 platform:
   - x86
@@ -21,5 +21,5 @@ build: off
 test_script:
   - node --version
   - npm --version
-  - npm install
+  - npm rebuild
   - npm test
