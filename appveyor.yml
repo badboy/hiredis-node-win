@@ -15,12 +15,11 @@ install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - git submodule update --init --recursive
   - npm install --msvs_version=2013
-  - npm install -g node-gyp
-  - node-gyp configure build
 
 build: off
 
 test_script:
   - node --version
   - npm --version
+  - npm install
   - npm test
