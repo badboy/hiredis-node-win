@@ -21,5 +21,4 @@ build: off
 test_script:
   - node --version
   - npm --version
-  - node-gyp configure build
   - npm test
