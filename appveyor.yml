@@ -3,12 +3,12 @@ init:
 
 environment:
   matrix:
-    - nodejs_version: 1
-      test_command: iojs
     - nodejs_version: 0.11
       test_command: node
     - nodejs_version: 0.12
       test_command: node
+    - nodejs_version: 1
+      test_command: iojs
 
 platform:
   - x86
